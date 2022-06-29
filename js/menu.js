@@ -1,15 +1,6 @@
-function menu(){
-	var przycisk = document.querySelector('.belka_przycisk');
+const przycisk = document.querySelector(".belka_przycisk");
+const menu = document.querySelector(".nav_przedkliku");	
 	
-	if(przycisk){
-		alert("SIEMA");
-		przycisk.addEventListener('click',rozwinZwij);
-	}
-}
-
-function rozwinZwij(){
-	alert("GOTOWANA KUKURYDZA");
-	document.getElementById("nav_pokliku_id").style.display = block;
-}
-
-menu();
+przycisk.addEventListener('click',e=>{
+	menu.classList.toggle('nav_pokliku');
+});

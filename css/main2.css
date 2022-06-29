@@ -12,6 +12,7 @@ body{
 	width: 80%;
 	max-width: 1200px;
 	margin: 0 auto;
+	margin-top: 2em;
 }
 
 .belka{
@@ -62,10 +63,18 @@ body{
 
 .belka_nav_ul li{
 	list-style: none;
+	transition: 0.5s;
+	cursor:pointer;
 }
 
 .belka_nav_ul_menu li{
 	list-style: none;
+	cursor:pointer;
+}
+
+.belka_nav_ul li:hover{
+	letter-spacing: 0.1em;
+	
 }
 
 .li_wybrana{
@@ -78,8 +87,130 @@ body{
 	width: 60%;
 }
 
-.nav_pokliku{
+.nav_przedkliku{
 	display: none;
+}
+
+.nav_pokliku{
+	display: block;
+}
+
+.text--naglowkowy{
+	width: 100%;
+	font-size: 3rem;
+	
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+.text--prawy{
+	text-align: right;
+}
+
+.text--lewy{
+	text-align: left;
+}
+
+.container__polecane__flex{
+	width:100%;
+	display: flex;
+	gap: 1em;
+	flex-wrap: wrap;
+}
+
+.flex__box{
+	width: 10em;
+	height: 15em;
+	
+	padding: 0.5em;
+	
+	border-color: #111;
+	border-style: solid;
+	overflow:hidden;
+	
+	display: flex;
+	flex-direction: column;
+	
+	gap: 2rem;
+	cursor: pointer;
+}
+
+.flex__box__line{
+	width: 45%;
+	margin-left: 27%;
+	height: 1px;
+	background-color: #000;
+}
+
+.flex__box__title{
+	font-weight: 700;
+	width: 100%;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+
+.container__topNews{
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.topNews__article{
+		width: 100%;
+		border-style: solid none solid none;
+		border-width: 0.1em;
+		padding: 1em;
+		
+		display:flex;
+		gap: 3em;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		min-width: 20em;
+}
+
+.topNews__article_Top{
+		border-style: solid none solid none;
+}
+
+.topNews__article_Left{
+		border-style: none dotted none none;
+}
+
+.topNews__article__50{
+	width: 50%;
+}
+
+.topNews__article__Column{
+	flex-direction: column;
+}
+
+
+.topNews__article__Img__Half{
+	width: 44%;
+	min-width: 15em;
+}
+
+.topNews__article__Img__Full{
+	width: 100%;
+}
+
+.topNews__article__Header_Img{
+	background-image: url("../assets/tlo.jpg");
+	height: 100%;
+	color:white;
+	padding-top: 5rem;
+}
+
+.topNews__article__Header{
+	font-size: 3.5rem;
+	font-weight: 800;
+	text-align:right;
+	width: 44%;
+}
+
+.topNews__article__Header__Full{
+	text-align:center;
+	width: 100%;
 }
 
 @media screen and (max-width: 900px){
