@@ -213,6 +213,82 @@ body{
 	width: 100%;
 }
 
+.ytContainer{
+	background-color: #600707;
+	background-image: url("../assets/tloYT.png");
+	color: white;
+	margin-top: 10em;
+	overflow:hidden;
+}
+
+.ytContainer_title{
+	font-weight: 900;
+	font-size: 4rem;
+	text-align: center;
+	margin: auto 0;
+	border-bottom: solid;
+	padding: 0.2em;
+}
+
+.ytContainer__div{
+	width: 80%;
+	max-width: 40em;
+	margin: 0 auto;
+	overflow:hidden;
+	padding: 4em;
+	
+}
+.proba{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.ytContainer_div__img__hoverEfect{
+	position: absolute;
+	width:100%;
+	height: 100%;
+	top: 0;
+	background-color: #010A;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight:700;
+	font-size: 4rem;
+	opacity: 0;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.ytContainer_div__img__time{
+	position: absolute;
+	font-weight:700;
+	font-size: 1.3rem;
+	right: 0.5em;
+	bottom: 0.5em;
+}
+
+.ytContainer_div__header{
+	font-size: 3rem;
+	width: 100%;
+	text-align: center;
+	margin-top: 1em;
+}
+
+.ytContainer_div__img{
+	width:100%;
+	
+}
+
+.ytContainer_div__img__hoverEfect:hover{
+	opacity: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
 @media screen and (max-width: 900px){
 	.belka_nav{
 		display: none;
