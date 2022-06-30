@@ -76,6 +76,11 @@ body{
 	
 }
 
+.belka_nav_ul_menu a {
+	color: #001;
+}
+
+
 .li_wybrana{
 	font-weight: 700;
 }
@@ -94,252 +99,72 @@ body{
 	display: block;
 }
 
-.text--naglowkowy{
-	width: 100%;
-	font-size: 3rem;
-	
-	margin-top: 2em;
-	margin-bottom: 1em;
-}
-
-.text--prawy{
-	text-align: right;
-}
-
-.text--lewy{
-	text-align: left;
-}
-
-.container__polecane__flex{
-	width:100%;
-	display: flex;
-	gap: 1em;
-	flex-wrap: wrap;
-}
-
-.flex__box{
-	width: 10em;
-	height: 15em;
-	
-	padding: 0.5em;
-	
-	border-color: #111;
-	border-style: solid;
-	overflow:hidden;
-	
-	display: flex;
-	flex-direction: column;
-	
-	gap: 2rem;
-	cursor: pointer;
-}
-
-.flex__box__line{
-	width: 45%;
-	margin-left: 27%;
-	height: 1px;
-	background-color: #000;
-}
-
-.flex__box__title{
-	font-weight: 700;
-	width: 100%;
-	text-align: center;
-	font-size: 1.5rem;
-}
 
 
-.container__topNews{
-	display:flex;
-	flex-wrap: wrap;
-}
-
-.topNews__article{
-		width: 100%;
-		border-style: solid none solid none;
-		border-width: 0.1em;
-		padding: 1em;
-		
-		display:flex;
-		gap: 3em;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		min-width: 20em;
-}
-
-.topNews__article_Top{
-		border-style: solid none solid none;
-}
-
-.topNews__article_Left{
-		border-style: none dotted none none;
-}
-
-.topNews__article__50{
-	width: 50%;
-}
-
-.topNews__article__Column{
-	flex-direction: column;
-}
-
-
-.topNews__article__Img__Half{
-	width: 44%;
-	min-width: 15em;
-}
-
-.topNews__article__Img__Full{
-	width: 100%;
-}
-
-.topNews__article__Header_Img{
-	background-image: url("../assets/tlo.jpg");
-	height: 100%;
-	color:white;
-	padding-top: 5rem;
-}
-
-.topNews__article__Header{
-	font-size: 3.5rem;
-	font-weight: 800;
-	text-align:right;
-	width: 44%;
-}
-
-.topNews__article__Header__Full{
-	text-align:center;
-	width: 100%;
-}
-
-.ytContainer{
-	background-color: #600707;
-	background-image: url("../assets/tloYT.png");
-	color: white;
-	margin-top: 10em;
-	overflow:hidden;
-}
-
-.ytContainer_title{
-	font-weight: 900;
-	font-size: 4rem;
-	text-align: center;
-	margin: auto 0;
-	border-bottom: solid;
-	padding: 0.2em;
-}
-
-.ytContainer__div{
+.container{
 	width: 80%;
-	max-width: 40em;
 	margin: 0 auto;
-	overflow:hidden;
-	padding: 4em;
 	
-}
-.proba{
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
-
-.ytContainer_div__img__hoverEfect{
-	position: absolute;
-	width:100%;
-	height: 100%;
-	top: 0;
-	background-color: #010A;
 	display: flex;
+	flex-direction: column;
+	gap: 5em;
 	align-items: center;
-	justify-content: center;
-	font-weight:700;
-	font-size: 4rem;
-	opacity: 0;
-	transition: 0.5s;
-	cursor: pointer;
 }
 
-.ytContainer_div__img__time{
-	position: absolute;
-	font-weight:700;
-	font-size: 1.3rem;
-	right: 0.5em;
-	bottom: 0.5em;
-}
-
-.ytContainer_div__header{
-	font-size: 3rem;
-	width: 100%;
+.container__header{
+	margin: auto 0;
+	margin-bottom: .5em;
+	font-size: 5rem;
 	text-align: center;
-	margin-top: 1em;
 }
 
-.ytContainer_div__img{
-	width:100%;
-	
-}
 
-.ytContainer_div__img__hoverEfect:hover{
-	opacity: 100%;
-}
-
-.piosenka__container{
-	width: 80%;
-	margin: 0 auto;
-	
-	display: flex;
-	justify-content: center;
-	align-items:center;
-}
-
-.piosenka__container_60{
+.pojemnik{
 	width: 100%;
-	overflow: hidden;
-	
-	background-image: url("../assets/piosenka.jpg");
-	background-color: #222;
-	background-position: center;
-	height:100%;
+	display: flex;
+	border-top: solid;
+	border-bottom: solid;
+	padding: 1em;
+	align-items:center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 2em;
+	margin-top: 2em;
 }
 
-.piosenka__container_40{
-	width: 40%;
-	height:100%;
-		background-color: black;
-		
+.pojemnik__img{
+	width: 30%;
+	height: 100%;
+	min-width: 200px;
+}
+
+.pojemik__opis{
+	width: 60%;
 	display: flex;
 	flex-direction: column;
-	
-	border: 0.1rem solid #222;
-	gap: 2rem;
-	
+	justify-content: center;
+	gap: 2em;
 }
 
-.piosenka__container__header{
-	font-size: 4rem;
+.pojemik__opis__kreska{
+	width: 10%;
+	height: 1px;
+	background-color: #242;
+	margin:0 auto;
+}
+
+.pojemik__opis__header{
+	font-size: 2rem;
+	width: 100%;
+	text-align: center;
 	font-weight: 800;
-	
-	width: 100%;
-	background-color: white;
-	padding: 0.5rem;
 }
 
-.piosenka__container__p{
-	width: 100%;
-	font-size: 1.5rem;
-	background-color: black;
-	color:white;
+.pojemik__opis__article{
+	width: 90%;
+	max-width:600px;
+	margin: 0 auto;
 	text-align: justify;
-	padding:1rem;
-}
-
-a{
-	text-decoration: none;
-	color: white;
-}
-
-.belka_nav_ul_menu a {
-	color: #001;
 }
 
 footer{
@@ -364,4 +189,9 @@ footer{
 	.belka_przycisk{
 		display: block;
 	}
+}
+
+a{
+	text-decoration: none;
+	color: white;
 }
