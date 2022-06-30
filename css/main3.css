@@ -342,61 +342,6 @@ a{
 	color: #001;
 }
 
-.kolkoIkrzyzyk{
-	width: 100%;
-}
-
-.kolkoIkrzyzyk__gra{
-	width: 80%;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	font-family: 'Press Start 2P', cursive; 
-	font-size: 4rem;
-}
-
-.row{
-	display:flex;
-	width: 100%;
-	align-items: center;
-	justify-content: center;
-	
-}
-
-.kafelek{
-	background-color: #003;
-	background-image:  url("../assets/nic.png");
-	background-position: center;
-	margin:0.1em;
-	width:20%;
-	height:200px;
-	display: flex;
-	justify-content:center;
-	align-items: center;
-	font-size: 6rem;
-	
-
-	color:white;
-}
-
-.kolkoIkrzyzyk__showLater{
-	display: none;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	gap: 2rem;
-}
-
-.kolkoIKrzyzyk__przycisk{
-	width: 45%;
-	font-size: 1rem;
-	padding: 1em;
-	margin: 0 auto;
-	background-color: #003;
-	color: white;
-	border-width: 0px;
-}
-
 footer{
 	width: 100%;
 	height: 10rem;
