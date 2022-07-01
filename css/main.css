@@ -4,124 +4,109 @@
 
 body{
 	background-color: #EEF;
-	margin: 0;
+	margin: 0px;
 	font-family: 'Unica One', cursive;
-	overflow: hidden;
-	
+
 	background-color: #555;
 	background-image: url("../assets/tlo3.jpg");
-	backdrop-filter: blur(5px);
+}
+
+.belkaPionowa{
+	width: 100%;
+	margin-top: 2em;
+	margin-bottom: 6em;
+	background-color: #3A8C59CC;
+	padding: 0.01em;
+}
+.belkaPionowa h1{
+	margin: 0;
+}
+
+.belka__logo{
+	font-weight: 800;
+	font-size: 3rem;
+	width: 20%;
+	margin-left: 2em;
+	color: white;
 }
 
 .container{
 	width: 80%;
 	max-width: 1200px;
 	margin: 0 auto;
+	display: flex;
+	gap: 2em;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .box{
-	width: 100%;
-	height: 200px;
+	max-width: 600px;
+	min-width: 400px;
+	background-color: #2224;
+	padding: 2em;
+	color: white;
+	border-top: double #2225 7px;
+}
+
+.box__zal{
 	
-}
-
-.box__half{
-	overflow: hidden;
-	
-	margin-left: 1%;
-	margin-right: 1%;
-	float:left;
-}
-
-.box__80{
-	width: 58%;
-	height: 3000px;
-	
-	
-}
-
-.box__20{
-	width: 38%;
-}
-
-.box_padding{
-	padding: 3em;
-}
-
-.box__logo{
-	display:flex;
-	justify-content: center;
-	align-items:center;
-	
-	background-image: url("../assets/tlo.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	min-height: 20rem;
-}
-
-.box__header{
-	font-family: 'Press Start 2P', cursive;
-	font-size: 2.3rem;
-	text-align: center;
-	color: #eef;
-}
-
-.box__logo__text{
-	margin-top: 15rem;
-	color:#56D385;
-}
-
-.box__header__footer{
-	font-size: 1rem;
-}
-
-.box__rightText{
-	color: #3A8C59;
-	width: 100%;
-	text-align: right;
-	padding-right: 2em;
-	padding-top: 1em;
-	font-weight: 700;
-	font-size: 1.5rem;
-	cursor:pointer;
-}
-
-.box__registretion{
+	width: 80%;
+	height: 70%;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: space-around;
+	gap: 1em;
+}
+
+.box__zal__imputki{
+	height: 70%;
+	display: flex;
 	justify-content: center;
-	
-	margin-top: 7rem;
-	min-height: 20rem;
+	flex-direction: column;
+	gap: 1rem;
 }
 
-.box__registretion__element{
-	margin: 0.5em;
-	border-radius: 0.5em; 
-	border-width: 0.2em; 
-	border-color: #56D385;
-	color: #56D385;
-	background-color: #FFF;
-	padding: 0.5em;
-	font-size: 1.7rem;
-	width: 80%;
+.box__zal__imputki input{
+	background-color: #FFED;
+	color: #3A8C59;
+	border-top: double #fff 2px; 
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-weight: 900;
+	
 }
 
-.box__registretion__element_B{
-	margin: 2em;
-	
-	padding: 2em;
-	border-radius: 1em; 
-	font-weight: 800;
-	letter-spacing: 0.5em;
-	border-color: #56D385;
-	background-color: #56D385;
+.box__zal button{
+	background-color: #3A8C59;
 	color: white;
+	font-size: 0.9rem;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	border-radius: 0.5em;
+	border-width:0;
 	cursor: pointer;
-	font-size: 1rem;
+	font-weight: 800;
+	opacity: 0.9;
 }
+
+.box__zal button:hover{
+	opacity: 1;
+}
+
+.box header{
+	font-size: 2rem;
+	margin-bottom: 1em;
+	font-weight: 600;
+}
+
+
 
 a{
 	text-decoration: none;
