@@ -122,7 +122,7 @@ function sprawdzWygrana(dlaKogo){
 }
 
 function sprCzyKoniec(){
-	for(var i=0; i<8; i++){
+	for(var i=0; i<9; i++){
 		if(tabValue[i] == -1){
 			return false;
 		}
